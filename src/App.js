@@ -1,21 +1,24 @@
-import React, { Component } from 'react'
-import logo from './logo.svg';
-import './App.css';
-import axios from 'axios';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom';
+import './index.scss';
+import Navbar from './components/Navbar';
+import Coins from './components/Coins';
+import Details from './components/Details';
 
+const App = () => (
+  <div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Coins />} />
+        <Route path="/detail/:id" element={<Details />} />
+      </Routes>
+    </Router>
+  </div>
+);
 
-
-export default class App extends Component {
-  async componentDidMount() {
-    
-  }
-  render() {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
-}
-
-
+export default App;
