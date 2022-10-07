@@ -67,7 +67,7 @@ exports[`Details component component match with the snapshot 1`] = `
     >
       <p>
          $
-        20280.3679042756291630
+        19945.2594517121195892
          USD
       </p>
     </div>
@@ -79,7 +79,7 @@ exports[`Details component component match with the snapshot 1`] = `
     <div>
       <p>
          $
-        14055542245.4719429581422542
+        11977386150.4509435215355526
       </p>
     </div>
     <div
@@ -94,7 +94,7 @@ exports[`Details component component match with the snapshot 1`] = `
     >
       <p>
          
-        19169768.0000000000000000
+        19171625.0000000000000000
          
         BTC
       </p>
