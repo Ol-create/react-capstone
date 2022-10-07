@@ -1,18 +1,16 @@
-import axios from "axios";
+import axios from 'axios';
 
 const FETCHCOINS = 'FETCHCOINS';
 const FILTERCOINS = 'FILTERCOINS';
 
 const fetchCoin = (newState) => ({
-    type: FETCHCOINS,
-    newState
-})
+  type: FETCHCOINS,
+  newState,
+});
 const filterCoin = (filterState) => ({
-    type: FETCHCOINS,
-    filterState
-})
-
-
+  type: FETCHCOINS,
+  filterState,
+});
 
 const fetchCoins = async () => {
   const { data: post } = await axios.get('https://api.coincap.io/v2/assets?limit=100');
@@ -33,7 +31,7 @@ export const coinFilter = (cryto) => async (dispatch) => {
     coins.sort((a, b) => b.priceUsd - a.priceUsd);
   }
   const filterState = coins.slice(0, 51);
-  dispatch(filterCoin(filterState))
+  dispatch(filterCoin(filterState));
 };
 
 const reducer = (state = [], action) => {

@@ -1,13 +1,7 @@
-import axios from 'axios'
 const apiCoin = 'https://api.coincap.io/v2/assets/';
 
 const GET_DETAIL = 'GET_DETAIL';
 const initialState = [{ id: 1, symbol: 'CrytoCoin' }];
-
-const getDetails = () => ({
-  type: GET_DETAIL,
-  detail: cDetail,
-})
 
 const fetchDetail = async (id) => {
   const get = await fetch(apiCoin + id, { method: 'GET' });
@@ -31,6 +25,5 @@ const reducer = (state = initialState, action) => {
       return state;
   }
 };
-
 
 export default reducer;
