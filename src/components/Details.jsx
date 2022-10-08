@@ -11,7 +11,7 @@ const Details = () => {
   const cryto = useSelector((store) => store.detail);
   useEffect(() => {
     dispatch(coinDetail(id));
-  }, []);
+  });
   const {
     symbol, name: title, rank, priceUsd, volumeUsd24Hr, supply,
   } = cryto;

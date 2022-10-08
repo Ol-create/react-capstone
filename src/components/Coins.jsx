@@ -8,7 +8,7 @@ const Coins = () => {
   const crytoList = useSelector((store) => store.cryto);
   useEffect(() => {
     dispatch(coinList());
-  }, []);
+  });
 
   const changeHandler = (e) => {
     dispatch(coinFilter(e.target.value));
