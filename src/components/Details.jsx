@@ -12,7 +12,9 @@ const Details = () => {
   useEffect(() => {
     dispatch(coinDetail(id));
   }, []);
-const { symbol, name:title, rank, priceUsd, volumeUsd24Hr, supply } = cryto;
+  const {
+    symbol, name: title, rank, priceUsd, volumeUsd24Hr, supply,
+  } = cryto;
   return (
     <section>
       <NavLink to="/">

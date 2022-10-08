@@ -6,8 +6,8 @@ import Details from '../Details';
 import { coinDetail } from '../../redux/CoinState/detailReducer';
 
 describe('Details component', () => {
-  test('component match with the snapshot', async () => {
-    await store.dispatch(coinDetail('bitcoin'));
+  test('component match with the snapshot', () => {
+   store.dispatch(coinDetail('bitcoin'));
     const tree = renderer.create(
       <BrowserRouter>
         <Provider store={store}>

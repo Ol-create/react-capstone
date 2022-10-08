@@ -29,12 +29,8 @@ exports[`Details component component match with the snapshot 1`] = `
   <div
     className="detail"
   >
-    <h2>
-      BTC
-    </h2>
-    <p>
-      Bitcoin
-    </p>
+    <h2 />
+    <p />
   </div>
   <div
     className="title"
@@ -52,7 +48,6 @@ exports[`Details component component match with the snapshot 1`] = `
     <div>
       <p>
          #
-        1
       </p>
     </div>
     <div
@@ -67,7 +62,6 @@ exports[`Details component component match with the snapshot 1`] = `
     >
       <p>
          $
-        19945.2594517121195892
          USD
       </p>
     </div>
@@ -79,7 +73,6 @@ exports[`Details component component match with the snapshot 1`] = `
     <div>
       <p>
          $
-        11977386150.4509435215355526
       </p>
     </div>
     <div
@@ -94,9 +87,7 @@ exports[`Details component component match with the snapshot 1`] = `
     >
       <p>
          
-        19171625.0000000000000000
          
-        BTC
       </p>
     </div>
   </div>
