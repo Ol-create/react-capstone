@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink, useParams } from 'react-router-dom';
@@ -11,7 +12,7 @@ const Details = () => {
   const cryto = useSelector((store) => store.detail);
   useEffect(() => {
     dispatch(coinDetail(id));
-  }, [id]);
+  });
   const {
     symbol, name: title, rank, priceUsd, volumeUsd24Hr, supply,
   } = cryto;
