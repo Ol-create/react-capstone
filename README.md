@@ -13,6 +13,11 @@
 - Redux
 - CSS/SCSS
 
+## Link and Presentation 
+- [Link](https://stock-analizer.netlify.app/)
+
+- [Presentation](https://drive.google.com/file/d/1MiVO8QjVsHaNnRVexk86ezFyAXcOi9Of/view?usp=sharing)
+
 ## Getting Started
 
 ### Setup
