@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { coinList, coinFilter } from '../redux/CoinState/coinReducer';
